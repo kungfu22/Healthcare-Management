@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('images/vaccineboook.jpg'); /* Replace 'background.jpg' with your image path */
+    background-size: cover;
+    background-position: center;
+}
+
+h1{
+    color:#0e263f;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    
+}
+
+.availability{
+    background-color: rgba(171, 222, 252, 0.3);
+    padding: 10px;
+    border-radius: 5px;
+    flex: 1; /* Equal width for both sections */
+    margin-right: 20px; /* Add some spacing between sections */
+}
+.booking {
+    background-color: rgba(171, 222, 252, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1; /* Equal width for both sections */
+    margin-right: 20px; /* Add some spacing between sections */
+}
+
+.booking-entries {
+    background-color: rgba(171, 222, 252, 0.3);
+    padding: 20px 40px;
+    border-radius: 10px;
+    flex: 2; /* Equal width for this section */
+}
+
+form label {
+    
+    margin-bottom: 10px;
+
+}
+
+form input[type="text"], form input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+#availabilityResult, #bookingStatus {
+    margin-top: 20px;
+}
+
+#bookingList {
+    list-style: none;
+    padding: 0px;
+}
+
+#bookingTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#bookingTable th, #bookingTable td {
+    padding: 20px 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+#bookingTable th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+#bookingTable tr:hover {
+    background-color: #f5f5f5;
+}
+
+#showEntriesBtn {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#showEntriesBtn:hover {
+    background-color: #0056b3;
+}
+
+#homeButton {
+    background-color: #5c7085;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 30px;
+    left: 20px;
+}
+
+footer{
+    text-align: center;
+    margin-top: 80px;;
+}

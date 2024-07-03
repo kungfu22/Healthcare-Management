@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaccine Availability and Booking</title>
+    <link rel="stylesheet" href="vaccine.css">
+</head>
+<body>
+    <h1>"Unlocking Wellness: Your Vaccine Journey Begins Here!"</h1>
+    <div class="container">
+        <div class="availability">
+            <h2>Check Vaccine Availability</h2>
+            <!-- Form for checking availability -->
+            <form id="availabilityForm">
+                <label for="Select vaccine">Select Vaccine:</label>
+                <select name="Select Vaccine" placeholder="Select">
+                    <option value="second" selected>Select</option>
+                    <option value="first"> Tetanus Vaccine </option>
+                    <option value="third">Measles Vaccine</option>
+                    <option value="first"> HPV Vaccine (Human Papillomavirus Vaccine)</option>
+                    <option value="first"> Influenza Vaccine </option>
+                    <option value="first"> Hepatitis B Vaccine </option>
+                  </select><br><br>
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+                <button type="submit">Check Availability</button>
+            </form>
+            <div id="availabilityResult"> </div>
+        </div>
+        <div class="booking">
+            <h2>Book Your Vaccine</h2>
+            <!-- Form for booking -->
+            <form id="bookingForm">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+                <label for="Select vaccine">Select Vaccine:</label>
+                <select name="Select Vaccine" placeholder="Select">
+                    <option value="second" selected>Select</option>
+                    <option value="first"> Tetanus Vaccine </option>
+                    <option value="third">Measles Vaccine</option>
+                    <option value="first"> HPV Vaccine (Human Papillomavirus Vaccine)</option>
+                    <option value="first"> Influenza Vaccine </option>
+                    <option value="first"> Hepatitis B Vaccine </option>
+                  </select><br><br>
+                <button type="submit">Book Now</button>
+            </form>
+            <div id="bookingStatus"></div>
+        </div>
+        <div class="booking-entries">
+            <h2>Booking Entries</h2>
+            <button id="showEntriesBtn">Show All Entries</button>
+            <table id="bookingTable">
+                <!-- Table content will be added dynamically -->
+            </table>
+        </div>
+    </div><br><br>
+    
+    <button id="homeButton">Go to Home </button>
+
+    
+    <footer>    
+        <p><i class="fa fa-copyright" aria-hidden="true">Vaccine Booking by Wellness wave</i></i></p>
+    </footer>
+    <script src="vaccine.js"></script>
+</body>
+</html>
+
